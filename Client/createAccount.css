@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(2, 2, 44));
+}
+
+.container {
+    height: 85vh;
+    width: 85%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: flex;
+}
+
+.info-box {
+    height: 100%;
+    width: 50%;
+    color: whitesmoke;
+    background-color: rgb(2, 2, 60);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 4rem 4rem;
+}
+
+.logo-box {
+    height: 5.5rem;
+    width: 100%;
+    display: flex;
+    /* border: 2px solid white; */
+}
+
+.logo {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 15px;
+    background-image: url(Assets/applogo.png);
+    background-size: cover;
+    display: flex;
+    /* border: 2px solid white; */
+}
+
+.app-name {
+    height: 5rem;
+    width: 10rem;
+    margin: 0.5rem 1.5rem;
+}
+
+.app-name h3 {
+    font-size: 2rem;
+}
+
+.info-1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.info-2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.blue-txt {
+    color: blue;
+    font-weight: 900;
+}
+
+.follow {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.info-box a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.info-3 {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.create-account-box {
+    height: 100%;
+    width: 50%;
+    background-color: aliceblue;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 4rem 7rem;
+}
+
+.create-account-box h2,
+.create-account-box p{
+    text-align: center;
+}
+
+.icons {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 11rem;
+    left: 56rem;
+}
+
+.icons i {
+    margin: 0.9rem 0;
+}
+
+.input-area  {
+    height: 12rem;
+    margin: 1rem auto;
+}
+
+.input-area input {
+    height: 2.5rem;
+    width: 100%;
+    margin: 0.2rem auto;
+    padding-left: 3rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+
+#message {
+    height: 2rem;
+    width: 100%;
+}
+
+.btn {
+    height: 3rem;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    color: whitesmoke;
+    /* border: black; */
+    background-color: rgb(0, 115, 255);
+    position: relative;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-btn a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 480px) {
+
+    .container {
+        min-height: 100vh;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .info-box {
+        width: 100%;
+        border-radius: 0%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 2rem 1.5rem;
+    }
+
+    .logo-box {
+        height: 3.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .logo {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .app-name {
+        height: 3rem;
+        width: 11rem;
+        margin: 0.5rem 1rem;
+    }
+
+    .app-name h3 {
+        font-size: 1rem;
+    }
+
+    .info-1 {
+        font-size: 1.3rem;
+    }
+
+    .info-2 {
+        font-size: 1rem;
+    }
+
+    .info-box a {
+        font-size: 1rem;
+    }
+
+    .info-3 {
+        margin: 0.5rem 0;
+    }
+
+    .follow {
+        font-size: 1rem;
+    }
+
+    .create-account-box {
+        width: 100%;
+        border-radius: 0%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 2rem 4rem;
+    }
+
+    .create-account-box h2,p {
+        font-size: 0.8rem;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .input-area {
+        height: 7rem;
+    }
+
+    .input-area input {
+        height: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .btn {
+        height: 2rem;
+    }
+
+    .login-btn span{
+        font-size: 0.9rem;
+    }
+
+}

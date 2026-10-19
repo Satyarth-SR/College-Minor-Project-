@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(2, 2, 65); */
+    background-image: linear-gradient(to right,rgb(0, 0, 0),rgb(2, 2, 44));
+}
+
+.container {
+    height: 70vh;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    margin: 6rem auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    box-shadow: 10px 5px 5px #ffffff;
+}
+
+.logo {
+    height: 4rem;
+    width: 4rem;
+    background-image: url(/Assets/applogo.png);
+    background-size: cover;
+    margin: 1rem auto;
+    border-radius: 15px;
+}
+
+.btn {
+    height: 3rem;
+    width: 13rem;
+    font-size: 1.3rem;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 100px;
+    color: whitesmoke;
+    background-color: rgb(31, 94, 255);
+    border: 1px solid rgb(31, 94, 255);
+}
+.btn a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* email-box */
+
+.email-box p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.email-box input {
+    height: 3rem;
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem auto;
+}
+
+.email-box {
+    color: whitesmoke;
+    display: none;
+}
+
+/* OTP box */
+
+.otp-box p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.boxes {
+    height: 3rem;
+    width: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.box {
+    height: 3rem;
+    width: 2rem;
+    color: whitesmoke;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp-box {
+    color: whitesmoke;
+    display: none;
+}
+
+/* Password reset box */
+
+.password-box h2 {
+    text-align: center;
+}
+
+.password-box p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0.5rem auto;
+     
+}
+
+.password-box input {
+    height: 2.5rem;
+    width: 80%;
+    margin: 0.5rem 2.4rem;
+    padding-left: 2rem;
+    border-radius: 10px;
+}
+
+.password-box {
+    color: whitesmoke;
+    display: none;
+}
+
+/* Success box */
+
+.success-box {
+    color: whitesmoke;
+    text-align: center;
+    margin: 5rem auto;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    
+    .container {
+        height: 75vh;
+        width: 90%;
+        padding: 1rem;
+        box-shadow: none;
+    }
+
+    .otp-box p {
+        font-size: 1.3rem;
+    }
+
+    .success-box {
+        margin: 4rem 0;
+
+    }
+
+    .success-box .btn {
+        margin: 3rem auto;
+    }
+    
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncryptX - Create Account</title>
+    <link rel="stylesheet" href="createAccount.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="info-box">
+            <div class="logo-box">
+                <div class="logo"></div>
+                <div class="app-name">
+                    <h3>EncryptX</h3>
+                    <span>Connect . Chat . Secure</span>
+                </div>
+            </div>
+            <p class="info-1">Real-time Chat</p>
+            <span class="info-2">For a<span class="blue-txt"> Closer World</span></span>
+            <p class="info-3">
+                Stay connected with your friends, family and team. Chat instantly, securely, share files, and never
+                miss a moment.
+            </p>
+            <p class="info-1">Join the conversation</p>
+            <p class="info-2">By Creating Your Account</p>
+            <p class="follow">Follow us on :</p>
+            <a href=""><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+            <br>
+            <a href=""><i class="fa-brands fa-facebook"></i> FaceBook</a>
+
+        </div>
+
+        <div class="create-account-box">
+            <h2>Create Account</h2>
+            <p>Get started with few simple steps</p>
+
+
+            <form id="createAccountForm">
+
+                <div class="icons">
+                    <div><i class="fa-solid fa-user"></i></div>
+                    <!-- <div><i class="fa-solid fa-circle-user"></i></div> -->
+                    <div><i class="fa-solid fa-envelope"></i></div>
+                    <div><i class="fa-solid fa-lock"></i></div>
+                    <div><i class="fa-solid fa-lock"></i></div>
+                </div>
+
+                <div class="input-area">
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                    <!-- <input type="text" placeholder="Create username" required> -->
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="password" id="password" placeholder="Create password" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+                </div>
+
+                <p id="message"></p>
+
+                <button class="btn" type="submit">Create Account</button>
+                
+            </form>
+
+            <p class="or">or</p>
+            <button class="btn">SignUp with Google</button>
+
+            <div class="login-btn">
+                <span>Already have an account?</span>
+                <a href="login.html">Login</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="createAccount.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(2, 2, 44));
+}
+
+.container {
+    height: 85vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.info-container {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(2, 2, 60);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 4rem 4rem;
+}
+
+.logo-box {
+    height: 5.5rem;
+    width: 100%;
+    display: flex;
+    /* border: 2px solid white; */
+}
+
+.logo {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 15px;
+    background-image: url(/Assets/applogo.png);
+    background-size: cover;
+    display: flex;
+    /* border: 2px solid white; */
+}
+
+.app-name {
+    height: 5rem;
+    width: 10rem;
+    margin: 0.5rem 1.5rem;
+}
+
+.app-name h3 {
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.app-name span {
+    color: whitesmoke;
+}
+
+.info-1 {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.info-2 {
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.blue-txt {
+    color: blue;
+    font-weight: 900;
+}
+
+.info-3 {
+    color: whitesmoke;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.feature {
+    color: whitesmoke;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 2rem 0 0 0;
+}
+
+.feature-description {
+    color: whitesmoke;
+    padding: 0 2.5rem;
+}
+
+.login-form {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border: 2px solid white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 4rem 7rem;
+}
+
+.login-form h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.login-form p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.input-area {
+    /* height: rem; */
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 0 0;
+}
+
+.input-area input {
+    height: 3rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    border: 1px solid black;
+    padding-left: 3rem;
+    position: relative;
+}
+
+.icons {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 13rem;
+    left: 56rem;
+    z-index: 1;
+}
+
+.icons i {
+    margin: 1.5rem 0;
+}
+
+.forgot-password {
+    text-align: end;
+    margin: 0.5rem 0;
+}
+
+.forgot-password a {
+    text-decoration: none;
+}
+
+.btn {
+    height: 3rem;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0.3rem 0;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: rgb(0, 115, 255);
+}
+
+.account-creation {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.account-creation a {
+    text-decoration: none;
+}
+
+/* For Mobile */
+
+@media (max-width: 480px) {
+
+    .container {
+        min-height: 100vh;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .info-container {
+        width: 100%;
+        border-radius: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 2rem  1.5rem;
+    }
+
+    .logo-box {
+        height: 3.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .logo {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .app-name {
+        height: 3rem;
+        width: 11rem;
+        margin: 0.5rem 1rem;
+    }
+
+    .app-name h3 {
+        color: whitesmoke;
+        font-size: 1rem;
+    }
+
+    .info-1 {
+        color: whitesmoke;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .info-2 {
+        color: whitesmoke;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .blue-txt {
+        color: blue;
+        font-weight: 900;
+    }
+
+    .info-3 {
+        color: whitesmoke;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .feature {
+        color: whitesmoke;
+        font-size: 1.2rem;
+        margin: 1.5rem 0 0 0;
+    }
+
+    .feature-description {
+        font-size: 0.8rem;
+        padding: 0 1.9rem;
+    }
+
+    .login-form {
+        width: 100%;
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 2rem 2rem;
+    }
+
+    .input-area input {
+        padding: 1rem;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .account-creation p {
+        font-size: 1rem;
+    }
+
+}
