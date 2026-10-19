@@ -24,7 +24,7 @@ body {
 .logo {
     height: 4rem;
     width: 4rem;
-    background-image: url(/Assets/applogo.png);
+    background-image: url(./Assets/applogo.png);
     background-size: cover;
     margin: 1rem auto;
     border-radius: 15px;
