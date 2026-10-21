@@ -18,7 +18,7 @@ form.addEventListener("submit", async(event) => {
 
     try {
         const response = await fetch(
-            "http://localhost:4002/api/register",
+            "https://musical-goggles-97pw66w7rqww26p4-4002.app.github.dev//api/register",
             {
                 method: "POST",
 

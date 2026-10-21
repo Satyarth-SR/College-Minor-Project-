@@ -10,7 +10,7 @@ dotenv.config();
 connectDB();
 
 app.use(cors({
-    origin: "http://127.0.0.1:5500"
+    origin: "https://musical-goggles-97pw66w7rqww26p4-5501.app.github.dev/"
 }));
 
 app.use(express.json());
